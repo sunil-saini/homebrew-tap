@@ -11,7 +11,7 @@ class Astat < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/sunil-saini/astat/releases/download/v0.1.8/astat_0.1.8_darwin_x86_64.tar.gz"
-      sha256 "36730f759aa229a9c5195cd4062b092b51940c947b0ed44e77999109a8d29f8f"
+      sha256 "4a8cbc6e833559150126c9c5d4ad11156f25b0c357f9ba1da48174be0a0a4587"
 
       def install
         bin.install "astat"
@@ -22,7 +22,7 @@ class Astat < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/sunil-saini/astat/releases/download/v0.1.8/astat_0.1.8_darwin_arm64.tar.gz"
-      sha256 "14b97fa9afc1631092ee24b14935f1b44d517598ee2e6452fb0a33481d7955db"
+      sha256 "dd3f39c69c4a83a47aeb41c3e1b8667e83a24c1781f2bb71ba17ec04dcb35e88"
 
       def install
         bin.install "astat"
@@ -36,7 +36,7 @@ class Astat < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/sunil-saini/astat/releases/download/v0.1.8/astat_0.1.8_linux_x86_64.tar.gz"
-      sha256 "77c66124427210fb800d96e081b4e7e66b81eab0b001d721b9aafa61c200059c"
+      sha256 "30f0a00dc97c53821e197e0994161dc08b4c30289d4688f8271e5ebc4874bf36"
       def install
         bin.install "astat"
         bash_completion.install "completions/astat.bash" => "astat"
@@ -46,7 +46,7 @@ class Astat < Formula
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/sunil-saini/astat/releases/download/v0.1.8/astat_0.1.8_linux_arm64.tar.gz"
-      sha256 "03db3b497a77f4545bff925eaf062ab062e116288b53adac88b7a1e52533549c"
+      sha256 "4020506daf90eb84cd3cf351b4eba2848c30099c3de531daa7533d08ca19a255"
       def install
         bin.install "astat"
         bash_completion.install "completions/astat.bash" => "astat"

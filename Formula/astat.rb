@@ -5,13 +5,13 @@
 class Astat < Formula
   desc "A blazing fast CLI tool that caches AWS resources details locally and provides deep infrastructure tracing"
   homepage "https://github.com/sunil-saini/astat"
-  version "0.1.9"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/sunil-saini/astat/releases/download/v0.1.9/astat_0.1.9_darwin_x86_64.tar.gz"
-      sha256 "62764a4d0e7bbd5903e8a0004c2b635cbbad35eab5524b10d1a2ce61eed3d9e1"
+      url "https://github.com/sunil-saini/astat/releases/download/v0.2.0/astat_0.2.0_darwin_x86_64.tar.gz"
+      sha256 "1a857cf7b27198fe8e4ce75c5a12c543fb6b8564754d6d7522e4cc12e8167e18"
 
       def install
         bin.install "astat"
@@ -21,8 +21,8 @@ class Astat < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/sunil-saini/astat/releases/download/v0.1.9/astat_0.1.9_darwin_arm64.tar.gz"
-      sha256 "f8d22df96890df8e9ead1cf2840a33ae2a52936bdcae673939955f6ac147d176"
+      url "https://github.com/sunil-saini/astat/releases/download/v0.2.0/astat_0.2.0_darwin_arm64.tar.gz"
+      sha256 "753f8dfbde33b5dbcd7cb4dfc337cb887ff28bfbfdb161d3e93c49648aa8af86"
 
       def install
         bin.install "astat"
@@ -35,8 +35,8 @@ class Astat < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sunil-saini/astat/releases/download/v0.1.9/astat_0.1.9_linux_x86_64.tar.gz"
-      sha256 "0b2c363bcee901ec7f41fbeba40ac19ef946bd9a2ff1d4d427fb51ae8103d593"
+      url "https://github.com/sunil-saini/astat/releases/download/v0.2.0/astat_0.2.0_linux_x86_64.tar.gz"
+      sha256 "1d386cb4ae5107b26df35b04493dcf7979f2350e306b6c9bd2acc556152a9ba5"
       def install
         bin.install "astat"
         bash_completion.install "completions/astat.bash" => "astat"
@@ -45,8 +45,8 @@ class Astat < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sunil-saini/astat/releases/download/v0.1.9/astat_0.1.9_linux_arm64.tar.gz"
-      sha256 "e61f5d7e074424f245d608eff08847a5243bd8dcccbb2512a99aae3800342e7d"
+      url "https://github.com/sunil-saini/astat/releases/download/v0.2.0/astat_0.2.0_linux_arm64.tar.gz"
+      sha256 "6329cebe6d77267d7921fc76173bb6ab534a305a487171d442a1700ec8d7d78a"
       def install
         bin.install "astat"
         bash_completion.install "completions/astat.bash" => "astat"
